@@ -1,0 +1,6 @@
+num1 = int(input("Enter num: "))
+num2 = int(input("Enter num: "))
+num3 = int(input("Enter num: "))
+full_num = str(num1)+str(num2)+str(num3)
+print("Your number:",full_num)
+print("Your number two times itself:",2*int(full_num))
