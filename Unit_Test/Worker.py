@@ -53,3 +53,9 @@ class Worker:
             return response.text
         else:
             return 'Bad response!'
+
+
+
+roy = Worker('Roy', 'Segal', 1998, 7, 26, "ness ziona", 'il')
+print(roy.location())
+
