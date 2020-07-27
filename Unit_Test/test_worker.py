@@ -1,27 +1,16 @@
 from unittest import TestCase
-from Unit_Test.Worker import Worker
-# from unittest.mock import Mock
-# from unittest import TestCase.Mock
-import datetime
+from unittest.mock import patch
+from Unit_Test import Worker
 
 
 class TestWorker(TestCase):
-
-    def setUp(self):
-        print("Setup")
-        self.roy = Worker('Roy', 'Segal', 1998, 7, 26, "ness-ziona", 'il')
-
-    def tearDown(self):
-        print("TearDown")
+    # @mock.patch('Unit_Test.Worker.Worker.location', return_value = )
 
     def test_full_name(self):
         pass
 
     def test_age(self):
-        if self.assertGreaterEqual(self.roy.birth_month, datetime.datetime.now().month):
-            self.assertGreater(self.roy.birth_day, datetime.datetime.now().day)
-        # self.assertEqual(self.roy.birth_year, 2020)
-        # self.assertGreater(self.roy.birth_year, 2020)
+        pass
 
     def test_days_to_birthday(self):
         pass
@@ -30,4 +19,7 @@ class TestWorker(TestCase):
         pass
 
     def test_location(self):
-        pass
+
+
+
+
