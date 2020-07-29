@@ -21,7 +21,11 @@ class Worker:
 
     def age(self):
         """Returns the age of the worker"""
-        return f'{self.first_name} is {datetime.datetime.now().year - self.birth_year} years old'
+        if "-" in {datetime.datetime.now().year - self.birth_year}:
+            day = "Error"
+        else:
+            day = f'{self.first_name} is {datetime.datetime.now().year - self.birth_year} years old'
+        return day
 
     def days_to_birthday(self):
         """Returns the number of days until the next birthday"""
@@ -53,7 +57,6 @@ class Worker:
             return response.text
         else:
             return 'Bad response!'
-
 
 
 roy = Worker('Roy', 'Segal', 1998, 7, 26, "ness ziona", 'il')
